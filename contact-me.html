@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codeable UI - C8</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container-lg">
+        <nav class="navbar">
+          <a href="/index.html" class="header__logo text-decoration-none">
+            <h1 class="head-md semibold">Antony Huerto</h1>
+          </a>
+          <input type="checkbox" id="menu">
+          <label for="menu" class="nav-menu">
+            <i class="ri-menu-line"></i>
+          </label>
+          <ul class="navbar__links list-style-none">
+            <li><a href="/article.html" class="link text semibold">Articles</a></li>
+            <li>
+              <a href="/portafolio.html" class="link text semibold">Portafolio</a>
+            </li>
+            <li><a href="/about-me.html" class="link text semibold">About</a></li>
+            <li>
+              <a
+              href="#"
+              class="button button--primary button--sm text-decoration-none"
+              >
+              Contact Me
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="container-lg">
+        <div class="section-md">
+          <h1 class="head-lg semibold text-center">Contact Me</h1>
+          <p class="text-lg light text-center my-1">Looking to expand your team? Or do you need a web developer for a specific project? If I can help you in any way don't hesitate to fill this form</p>
+        </div>
+      </section>
+      <form>
+        <fieldset class="section-md">
+          <div class="container-lg form-area">
+            <div class="form-block">
+              <label for="first-name">FIRST NAME</label>
+              <input type="text" id="first-name" name="first-name" placeholder="John" class="form-control">
+            </div>
+            <div class="form-block">
+              <label for="last-name">LAST NAME</label>
+              <input type="text" id="last-name" name="last-name" placeholder="Doe" class="form-control">
+            </div>
+            <div class="form-block">
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" name="email" placeholder="john@mail.com" class="form-control">
+            </div>
+            <div class="form-block">
+              <label for="company">COMPANY</label>
+              <input type="text" id="company" name="company" placeholder="Company SA" class="form-control">
+            </div>
+            <div class="form-block">
+              <label for="phone">PHONE</label>
+              <input type="tel" id="phone" name="phone" placeholder="987654321" class="form-control">
+            </div>
+            <div class="form-block">
+              <label for="country">COUNTRY</label>
+              <select id="country" name="country" class="form-control">
+                <option selected disabled value>Select one option</option>
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+            </div>
+            <div class="form-block">
+              <h3 class="light text-lg">HOW CAN I HELP YOU?</h3>
+              <label class="container">Job Offer
+                <input type="checkbox">
+                <span class="form-checkbox"></span>
+              </label>
+              <div class="light form-text">If you are looking to expand your team</div>
+              <label class="container">Project Offer
+                <input type="checkbox">
+                <span class="form-checkbox"></span>
+              </label>
+              <div class="light form-text">If you are looking to expand your team</div>
+              <label class="container">Collaboration
+                <input type="checkbox">
+                <span class="form-checkbox"></span>
+              </label>
+              <div class="light form-text">If you are looking to expand your team</div>
+              <label class="container">Other
+                <input type="checkbox">
+                <span class="form-checkbox"></span>
+              </label>
+              <div class="light form-text">If you are looking to expand your team</div>
+            </div>
+            <button type="submit" class="button button--primary button--lg text-decoration-none send-btn">Send</button>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
