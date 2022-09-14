@@ -8,7 +8,7 @@ body {
   font-size: 1.125rem;
   line-height: 2rem;
   font-family: var(--font-primary);
-  background-color: var(--primary-ligther);
+  background-color: var(--primary-lighter);
   color: var(--primary-darker)
 }
 
