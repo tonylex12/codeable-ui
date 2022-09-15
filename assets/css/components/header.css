@@ -3,7 +3,7 @@
 }
 
 .header__logo {
-  color: var(--primary-light)
+  color: var(--primary-light);
 }
 
 .navbar {
@@ -55,30 +55,35 @@
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
-  .header {
-    position: relative;
-  }
-
-  .navbar__links {
-    display: block;
+  #open-menu,
+  #close-menu {
     position: absolute;
+    right: 1rem;
+    top: .5rem;
+    transition: opacity 1s linear;
+  }
+  .navbar__links {
+    display: none;
     text-align: center;
     width: 100%;
-    padding: 1rem;
-    top: 2rem;
-    left: 0;
     background-color: var(--primary-darker);
   }
 
-  #menu {
-    display: block;
+  .navbar__links li {
+    margin: 1rem auto;
   }
-
+  
   .nav-menu {
     display: block;
   }
 
   #menu:checked ~ .navbar__links {
-    display: none;
+    display: block;
+  }
+
+  #menu:checked ~ #open-menu,
+  #menu:not(:checked) ~ #close-menu
+   {
+    opacity: 0;
   }
 }
