@@ -1,0 +1,78 @@
+.project {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(1fr, 384px));
+  gap: 2rem;
+}
+
+.project__description {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.project__image {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.project-img {
+  width: 327px;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.project-build {
+  background-color: var(--primary-regular);
+}
+
+.project-cards,
+.project-members {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.project-card {
+  margin-top: 3rem;
+}
+
+.project-card__icon {
+  background: var(--green-200);
+  padding: 1rem;
+  border-radius: .5rem;
+  display: inline-flex;
+  margin-bottom: 1.25rem;
+}
+
+.project-member__image {
+  width: 328px;
+  height: 256px;
+  object-fit: none;
+  border-radius: 8px;
+}
+
+.member-link {
+  color: var(--gray-500);
+  margin-right: 1rem;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .project,
+  .project-members {
+    grid-template-columns: 1fr;
+  }
+
+  .project__description {
+    grid-column: 1 / 2;
+  }
+
+  .project__image {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .project-cards {
+    grid-template-columns: 1fr;
+    gap: .25rem;
+  }
+}

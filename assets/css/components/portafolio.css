@@ -22,6 +22,7 @@
 
 .arrow-icon {
   margin-left: auto;
+  cursor: pointer;
 }
 
 .card-tags {
